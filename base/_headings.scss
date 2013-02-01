@@ -1,0 +1,88 @@
+/*------------------------------------*\
+    $HEADINGS
+\*------------------------------------*/
+/**
+ * As per: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
+ * 
+ * When we define a heading we also define a corresponding class to go with it.
+ * This allows us to apply, say, `class=alpha` to a `h3`; a double-stranded
+ * heading hierarchy.
+ */
+
+h1,.h1{
+  $h1-color: $base-font-color!default;
+  $h1-font-family: $base-font-family!default;
+  $h1-font-weight: 400!default;
+  $h1-font-variant: normal!default;
+
+  @include font($h1-font-family, $h1-font-weight, $h1-font-variant); 
+  @include font-size($h1-size);
+  @include color-link($h1-color);
+}
+h2,.h2{
+  $h2-color: $base-font-color!default;
+  $h2-font-family: $base-font-family!default;
+  $h2-font-weight: 400!default;
+  $h2-font-variant: normal!default;
+
+  @include font($h2-font-family, $h2-font-weight, $h2-font-variant); 
+  @include font-size($h2-size);
+  @include color-link($h2-color);
+}
+h3,.h3{
+  $h3-color: $base-font-color!default;
+  $h3-font-family: $base-font-family!default;
+  $h3-font-weight: 400!default;
+  $h3-font-variant: normal!default;
+
+  @include font($h3-font-family, $h3-font-weight, $h3-font-variant); 
+  @include font-size($h3-size);
+  @include color-link($h3-color);
+}
+h4,.h4{
+  $h4-color: $base-font-color!default;
+  $h4-font-family: $base-font-family!default;
+  $h4-font-weight: 400!default;
+  $h4-font-variant: normal!default;
+
+  @include font($h4-font-family, $h4-font-weight, $h4-font-variant); 
+  @include font-size($h4-size);
+  @include color-link($h4-color);
+}
+h5,.h5{
+  $h5-color: $base-font-color!default;
+  $h5-font-family: $base-font-family!default;
+  $h5-font-weight: 400!default;
+  $h5-font-variant: normal!default;
+
+  @include font($h5-font-family, $h5-font-weight, $h5-font-variant); 
+  @include font-size($h5-size);
+  @include color-link($h5-color);
+}
+h6,.h6{
+  $h6-color: $base-font-color!default;
+  $h6-font-family: $base-font-family!default;
+  $h6-font-weight: 400!default;
+  $h6-font-variant: normal!default;
+
+  @include font($h6-font-family, $h6-font-weight, $h6-font-variant); 
+  @include font-size($h6-size);
+  @include color-link($h6-color);
+}
+
+
+/**
+ * Heading groups and generic any-heading class.
+ * To target any heading of any level simply apply a class of `.hN`, e.g.:
+ * 
+   <hgroup>
+       <h1 class=hN>inuit.css</h1>
+       <h2 class=hN>Best. Framework. Ever!</h2>
+   </hgroup>
+ * 
+ */
+.hN{
+}
+hgroup .hN{
+    margin-bottom:0;
+}
