@@ -43,6 +43,13 @@
     }
 }
 
+@mixin text-shadow($h, $v, $blur, $color, $alpha: 1){
+    text-shadow:$h $v $blur $color;
+    text-shadow:$h $v $blur rgba($color, $alpha);
+    //No arctan function available, so direction is omitted
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#{$color}, strength=#{$blur});
+}
+
 /**
  * Create vendor-prefixed CSS in one go, e.g.
  * 
