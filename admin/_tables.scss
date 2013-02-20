@@ -1,0 +1,13 @@
+/**
+ * Overrides inuit tables classes
+ */
+
+/**
+ * Striped tables
+ */
+.table--striped{
+
+    tbody tr:nth-of-type(odd){
+        background-color:rgba(225,225,225,.5);
+    }
+}

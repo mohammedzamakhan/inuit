@@ -1,0 +1,37 @@
+/**
+ * Indicator
+ * Small box that changes color based on state
+ * uses checkbox hack to replace checkbox with label
+ *
+ * Usage:
+ * <span class='indicator'>
+ * 		<!--Hidden standard checkbox-->
+ * 		<input name='indicator' type='checkbox' value='on' checked>
+ *
+ * 		<!--The visible UI pseduo-checkbox-->
+ * 		<label for='indicator' class='checkbox'></label>
+ * </span>
+ */
+.indicator {
+	input[type="checkbox"] {
+		display:none;
+	}
+
+	
+	label {
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		width:$base-font-size;
+		height: $base-font-size;
+		border-radius: ($base-font-size / 2);
+
+		//unchecked
+		background-color:red;
+	}
+
+	//checked
+	input[type="checkbox"]:checked + label {
+		background-color:green;
+	} 
+}
