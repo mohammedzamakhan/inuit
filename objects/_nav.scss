@@ -45,7 +45,7 @@
  * 
  */
 .nav--stacked{
-    
+    @extend .nav;
     > li{
         display:list-item;
 
@@ -68,6 +68,7 @@
  * 
  */
 .nav--banner{
+    @extend .nav;
     text-align:center;
 }
 
@@ -84,6 +85,7 @@
  * 
  */
 .nav--block{
+    @extend .nav;
     line-height:1;
     /**
      * Remove whitespace caused by `inline-block`.
@@ -117,6 +119,7 @@
  * Thanks to @pimpl for this idea!
  */
 .nav--fit{
+  @extend .nav;
     display:table;
     width:100%;
         

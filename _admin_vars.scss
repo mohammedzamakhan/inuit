@@ -1,0 +1,129 @@
+/*------------------------------------*\
+    $VARS
+\*------------------------------------*/
+
+/*------------------------------------*\
+    $Typography
+\*------------------------------------*/
+
+//TODO_4:Move to new sheet?;
+$grey:rgb(33,33,33);
+$grey--light:#ddd;
+$grey--mid:#555;
+$gunsteel: rgb(06,09,30);
+$offwhite: #eee;
+$brown: #46352D;
+$green: rgb(0,102,0);
+
+$helvetica: Frutiger, "Frutiger Linotype", Univers, Calibri, Helvetica, Arial, sans-serif;
+
+/**
+ * Font-sizes (in pixels). Refer to relevant sections for their implementations.
+ */
+$micro-size:        14px!default;
+
+$base-font-color:	$grey;
+$base-font-family:	$helvetica;
+$base-font-size:    16px;
+$base-line-height:  20px;
+
+
+$h1-size:           32px!default;
+//$h1-color:			#111;
+//$h1-font-family:	$lato;
+$h1-font-variant:	small-caps;
+
+$h2-size:           24px!default;
+//$h2-color:			$green;
+//$h2-font-family:	$lato;
+$h2-font-variant:	small-caps;
+
+$h3-size:           20px!default;
+//$h3-color:			$green;
+//$h3-font-family:	$lato;
+//$h3-font-variant:	small-caps;
+
+$h4-size:           18px!default;
+//$h4-font-family:	$lato;
+//$h4-font-variant:	small-caps;
+
+$h5-size:           16px!default;
+$h6-size:           14px!default;
+
+
+
+
+
+/**
+ * inuit.css will work these next ones out for you.
+ * Assign our `$base-line-height` to a new spacing var for more transparency.
+ */
+$base-spacing-unit: $base-line-height!default;
+$half-spacing-unit: $base-spacing-unit / 2!default;
+$line-height-ratio: $base-line-height / $base-font-size;
+
+/*------------------------------------*\
+    $Config
+\*------------------------------------*/
+
+$debug-mode:        false!default;
+$global-border-box: true!default;
+
+$responsive:        true!default;
+$responsive-extra:  false!default; //Responsiveness for widescreen/high resolution desktop monitors and beyond?
+$responsive-push:   false!default; //Responsive push and pull produce a LOT of code, only turn them on if you definitely need them.
+$responsive-pull:   false!default;
+
+/**
+ * Tell inuit.css when breakpoints start.
+ */
+$lap-start:         481px!default;
+$desk-start:        1024px!default;
+$desk-wide-start: 	1200px!default;
+
+/**
+ * Would you like to use Adam Whitcroft’s Batch icon font, as per:
+ * adamwhitcroft.com/batch ?
+ */
+$batch:             false!default;
+
+.background--red,
+.back--red {
+	background-color: red;
+}
+
+.background--green,
+.back--green {
+	background-color: $green;
+}
+
+.scheme--green {
+	background-color: $green;
+	color:$grey--light;
+}
+
+.scheme--grey {
+	background-color: $grey--mid;
+	color: $grey--light;
+}
+
+.space {
+	margin-bottom: 1rem;
+}
+
+.half-space {
+	margin-bottom: .5rem;
+}
+
+.banner {
+	display: table;
+	width: 100%;
+	margin-top:10%;
+	padding: 1em 0;
+}
+
+.banner__content {
+	display: table;
+	margin-left:auto;
+	margin-right:auto;
+}

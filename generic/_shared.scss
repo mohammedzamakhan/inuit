@@ -10,32 +10,30 @@
  * Base elements
  */
 
-/*
 h1,h2,h3,h4,h5,h6,hgroup,
 ul,ol,dl,
 blockquote,p,address,
 table,
 fieldset,figure,
 pre,
-*/
 
 /**
  * Objects and abstractions
  */
-/*
+
 %sass-margin-bottom,
 .media,
 .island,
 .islet{
-    margin-bottom:$base-spacing-unit;
-    margin-bottom:($base-spacing-unit / $base-font-size)*1rem;
+    margin-bottom:$half-spacing-unit;
+    //margin-bottom:($base-spacing-unit / $base-font-size)*1rem;
     
     .islet &{
         margin-bottom:$base-spacing-unit / 2;
         margin-bottom:(($base-spacing-unit / $base-font-size) / 2)*1rem;
     }
 }
-*/
+
 
 /**
  * Doubled up `margin-bottom` helper class.
@@ -56,12 +54,6 @@ hr{
     margin-bottom:(($base-spacing-unit - 2px) / $base-font-size)*1rem;
 }
 */
-hr{
-    margin-bottom:$base-spacing-unit - 2px;
-    margin-bottom:(($base-spacing-unit - 2px) / $base-font-size)*.5rem;
-    margin-top:(($base-spacing-unit - 2px) / $base-font-size)*.5rem;
-}
-
 
 /**
  * Where `margin-left` is concerned we want to try and indent certain elements

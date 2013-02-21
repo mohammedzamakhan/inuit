@@ -1,0 +1,28 @@
+.buttonblock,
+.btnblock {
+	display:block;
+	float: left;
+	padding: 1em 3em;
+	border-right: 1px solid $grey--light;
+	cursor: pointer;
+	text-align: center;
+
+	&:hover {
+		box-shadow:inset 0 0 25px 1px rgba($grey--light,.33);
+	}
+}
+
+.buttonblock--stack,
+.btnblock--stack {
+	@extend .buttonblock;
+	float: none;
+	margin-bottom: ($base-font-size / 2);
+}
+
+.buttonblock--small,
+.btnblock--small {
+	@extend .buttonblock;
+	margin-left:.5em;
+	padding:.25em 1em;
+
+}
