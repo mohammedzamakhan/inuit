@@ -11,4 +11,11 @@
 	padding: $base-spacing-unit;
 }
 
-
+.greybox--titlebar,
+.gbox--titlebar {
+	padding-top: .5em;
+	padding-bottom:.5em;
+	padding-left: $base-spacing-unit;
+	background-color:rgb(204,204,204);
+	text-align: left;
+}
