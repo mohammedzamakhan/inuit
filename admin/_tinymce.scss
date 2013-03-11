@@ -1,0 +1,7 @@
+//force editor body to fill textarea
+#tinymce {
+	//must be set to same value as tinymce init config
+	min-height:300px;
+	padding:2em;
+	background-color:white;
+}

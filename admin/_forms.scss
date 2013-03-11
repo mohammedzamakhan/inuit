@@ -10,12 +10,63 @@
  * 		</label>
  * </form>
  */
+.form {
+	width:100%;
+	padding-bottom:$half-spacing-unit;
+	margin-bottom: $half-spacing-unit;
+	@include font-size(18px);
+
+	label {
+		display:block;
+		clear:both;
+		margin-bottom: 1.5em;
+		margin-bottom: 1.5rem;
+	}
+
+	input,
+	textarea {
+		width: 100%;
+		background-color: rgb(240, 240, 240);
+		background-color: rgba(#fff,.25);
+		border: 1px solid rgb(204,204,204);
+		box-shadow: 0 0 3px 1px rgb(221,221,221) inset;
+		padding: 4px 8px;
+		padding:.25rem .5rem;
+	}
+
+	input[type='checkbox'] {
+		display:block;
+		width:auto;
+		height:1.2em;
+		margin:auto;
+	}
+
+	input[type="button"],
+	input[type="submit"] {
+		background-color: rgb(221, 221, 221);
+		border: 1px solid rgb(170, 170, 170);
+		@include vendor(border-radius, 3px);
+		box-shadow: 0 0 1px 1px rgb(200, 200, 200);
+		display: block;
+		margin: 0 auto;
+		width: 66%;
+	}
+}
+
+//force editor body to fill textarea
+#tinymce {
+	height:100%;
+	background-color:white;
+}
+
+
 .form--mini {
 	padding-bottom:$half-spacing-unit;
 	margin-bottom: $half-spacing-unit;
 	@include font-size(18px);
 
 	label {
+		display:block;
 		clear:both;
 		margin-bottom: 6px;
 		margin-bottom: .75rem;
@@ -53,6 +104,7 @@
 
 .form--full {
 	width: 100%;
+
 
 	input,
 	textarea, {

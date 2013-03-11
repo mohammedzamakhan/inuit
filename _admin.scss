@@ -7,7 +7,7 @@
 /**
  * Import Inuit framework classes
  */
-@import "inuit/inuit";
+@import "inuit";
 /**
  * Import project-specific classes
  *
@@ -18,4 +18,5 @@
 @import "admin/greybox";
 @import "admin/indicator";
 @import "admin/page";
+@import "admin/notes";
 @import "admin/tables";
